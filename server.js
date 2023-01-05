@@ -8,9 +8,7 @@ let USER=process.env.USER
 let PASS=process.env.PASS
 
 app.use(express.json())
-app.use(cors({
-    origin:"http://localhost:3000"
-}))
+app.use(cors())
 
 
 let notificationMail=async(res,name,mail,message)=>{
